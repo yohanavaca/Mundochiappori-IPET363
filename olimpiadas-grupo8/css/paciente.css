@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(143, 188, 255);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(143, 188, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="int"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;border: 1px solid #0c6ddb;
+    border-radius: 5px;
+}
+
+select {
+    height: 35px;
+}
+
+input[type="submit"] {
+    background-color: rgb(143, 188, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+/* Mostrar u ocultar el campo "Nombre de la obra social" según la selección */
+#obraSocialTextoLabel,
+#obraSocialTexto {
+    display: none;
+}
+
+#obraSocialSelect:checked ~ #obraSocialTextoLabel,
+#obraSocialSelect:checked ~ #obraSocialTexto {
+    display: block;
+}
+
+
+
+
+
