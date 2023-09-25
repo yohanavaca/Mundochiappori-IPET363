@@ -67,10 +67,20 @@
 </head>
 <body>
     <h1>Lista de Datos</h1>
+    
+
+    
+   
+
+
+ <!-- Agrega un enlace que redirige a un script para generar el CSV -->
+<a href="generar_csv.php">Descargar CSV</a>
+
 
     <?php
     // Conectar a la base de datos (debes tener tu propio archivo de conexión)
     include("conexion.php");
+   
 
     // Consulta SQL para obtener los datos de la relación
     $sql = "SELECT * FROM dato d, reporte r WHERE d.dni= r.dni";
@@ -116,6 +126,9 @@
             echo "<td>" . $row['diagnostico'] . "</td>";
             echo "<td>" . $row['medicoAsignado'] . "</td>";
             echo "</tr>";
+            
+
+            
         }
 
         echo "</table>";
@@ -126,5 +139,18 @@
     // Cierra la conexión
     $conexion->close();
     ?>
-</body>
-</html>
+    
+ 
+   
+
+
+            
+            
+    </body>
+    </html>
+    <?php
+
+
+
+
+
