@@ -13,8 +13,13 @@
     $obraSocialTexto = isset($_POST["obraSocialTexto"]) ? $_POST["obraSocialTexto"] : "";
     $fechaNacimiento = $_POST['fechaNacimiento'];
     $dni = $_POST['dni'];
+    
+    if ($obraSocial === "no") {
+        $obraSocialTexto = "";
+    }
+    
 
-    $sql = "INSERT INTO dato VALUES(NULL,'$nombre','$apellido', '$edad', '$telefono', '$sexo', '$direccion', '$localidad', '$provincia', '$obraSocial', '$fechaNacimiento', '$dni')";
+    $sql = "INSERT INTO dato VALUES(NULL,'$nombre','$apellido', '$edad', '$telefono', '$sexo', '$direccion', '$localidad', '$provincia', '$obraSocial', '$obraSocialTexto', '$fechaNacimiento', '$dni')";
     echo ($sql);
     if ($conexion->query($sql) === TRUE) {
         header("location:nada.php");
