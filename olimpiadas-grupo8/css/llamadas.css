@@ -1,0 +1,9 @@
+
+body{
+    background-color: rgb(143, 188, 255);
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+  }

@@ -7,6 +7,9 @@
 
 </head>
 <body>
+<?php
+include("cabecera.php");
+?>
     
     <h1><span class="badge bg-secondary , container-fluid">Ficha del medico</span></h1>
 

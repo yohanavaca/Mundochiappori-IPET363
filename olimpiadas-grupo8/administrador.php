@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="./img/logohMicro.jpg">
+    <title>Administrador</title>
+    <link rel="shortcut icon" href="./img/logohmini.png">
     <link href="./css/admin.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 </head>
 <body>
+<div>
+    <?php
+    include("cabecera.php");
+    ?>
+</div>
+    
 <div class="container-fluid">
 
-    <nav>
-    <a href='logout.php'>
-        <button type="button" class="btn btn-outline-danger" value="Acceder">cerrar sesion</button>
-    </a>
-    </nav>
+    
     <header>
     <h1>¡HOLA ADMINISTRADOR!</h1>
     </header>
@@ -35,6 +37,7 @@
             <a href=registroLlamadas.php>
                 <button type="button" class="btn btn-outline-danger" value="Acceder">REGISTROS DE LLAMADAS</button>
             </a>
+            
             </div>
     </div>
 

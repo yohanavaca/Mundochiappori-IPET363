@@ -2,11 +2,16 @@
 <html>
 <head>
     <title>Ficha del Paciente</title>
+    <link rel="shortcut icon" href="./img/logohmini.png">
     <link href="./css/paciente.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 </head>
 <body>
+
+<?php
+include("cabecera.php");
+?>
 
     <h1><span class="badge bg-secondary , container-fluid">Ficha del paciente</span></h1>
 
@@ -57,10 +62,28 @@
         <label for="obraSocialTexto" id="obraSocialTextoLabel" style="display:none;">Nombre de la obra social:</label>
         <input type="text" id="obraSocialTexto" name="obraSocialTexto" style="display:none;"><br><br>
 
+        
+
         <label for="fechaNacimiento">fechaNacimiento:</label><br>
         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+        <label for="medicoAsignado">Medico asignado</label><br>
+        <select id="medicoAsignado" name="medicoAsignado" required>
+    
+    <?php
+   // $sql = "SELECT * FROM `medico`";
+   $conexion = mysqli_connect("localhost", "root","","datos_paciente")or exit ("no se puede conectar");
+   $sql = "SELECT * FROM medico";
+   $result = $conexion->query($sql);
 
-
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo '<option value="' . $row["id_medico"] . '">' . $row["nombre"] . ' ' . $row["apellido"] . '</option>';    
+        }
+    } else {
+        echo '<option value="">No hay medicos registrados</option>';
+    }
+    ?>
+</select><br><br>
 
         <input class="btn btn-primary" type="submit" value="Guardar Ficha">
     </form>

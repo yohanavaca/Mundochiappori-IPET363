@@ -1,0 +1,24 @@
+/* Estilos para el título h1 */
+h1 {
+    color: #e61919; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+/* Estilos para los párrafos */
+p {
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilos para el fondo del cuerpo del documento */
+body {
+    background-color: rgb(143, 188, 255); /* Color de fondo */
+}
+
+/* Estilos para el contenedor de datos médicos */
+#datos-medicos {
+    margin: 20px; /* Margen exterior */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde con color */
+    background-color: #fff; /* Color de fondo del contenedor */
+}
