@@ -22,6 +22,9 @@
     <header>
     <h1>¡HOLA ADMINISTRADOR!</h1>
     </header>
+    
+    <!--Barra de navegacion-->
+    
     <div>
     <div class="botones">
             
