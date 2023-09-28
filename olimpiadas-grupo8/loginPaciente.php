@@ -10,6 +10,9 @@
 <body>
     <link rel="stylesheet" href="css/style.css">
     <h1>Ingrese su DNI para consultar sus datos médicos</h1>
+    
+<!--label para ingresar el dni / tambien verifica si la info ingresada coincide-->
+    
     <form action="consultaDatosPaciente.php" method="POST">
         <label for="dni">DNI:</label>
         <input class="form-control me-2" type="text" name="dni" id="dni" required>
