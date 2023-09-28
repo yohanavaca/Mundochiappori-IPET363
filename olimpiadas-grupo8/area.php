@@ -13,7 +13,7 @@
 <?php
 include("cabecera.php");
 ?>
-    
+<!--formulario que ingresa datos a la base-->    
         <form action ="guardarArea.php" method="POST" enctype="multipart/form-data">
             <input type="text" REQUIRED name="area" placeholder="Area" value=""/>
             <input type="submit"value="aceptar"/>
