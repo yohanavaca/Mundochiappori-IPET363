@@ -6,10 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    
+<!--boton de modificar-->
+    
 <form action="consultaPaciente.php" method="post">
         
         <label for="nombre">Modificar:</label>
         <input type="text" id="nombre" name="nombre" required><br><br>
 </form>
+
 </body>
 </html>
