@@ -21,7 +21,7 @@
 
             var opciones = {
                 title: 'Ventas por Mes',
-                legend: 'none', // Puedes cambiar esto a 'right' o 'bottom' si deseas una leyenda
+                legend: 'none',
                 hAxis: {
                     title: 'Mes'
                 },
