@@ -13,6 +13,8 @@ include("cabecera.php");
     
     <h1><span class="badge bg-secondary , container-fluid">Ficha del medico</span></h1>
 
+<!--formulario para registrar datos-->
+
     <form action="consultaRegistrarMedico.php" method="post">
         
         <label for="nombre">Nombre:</label>
