@@ -31,6 +31,9 @@
     </style>
 </head>
 <body>
+    
+    <!--Barra de navegacion para las paginas del administrador-->
+    
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-md">
     
