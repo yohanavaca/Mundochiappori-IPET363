@@ -17,7 +17,7 @@
     <img src="./img/logoh.png" alt="logoh">
     <h2>Elija su usuario</h2>
 
-    
+<!--botonera-->  
 
         <div class="botones">
         
