@@ -14,7 +14,7 @@ include("cabecera.php");
 ?>
 
     <h1><span class="badge bg-secondary , container-fluid">Ficha del paciente</span></h1>
-
+<!--formulario para ingresar los datos-->
     <form class=container-fluid action="consultaPaciente.php" method="post">
         
         <label for="nombre">Nombre:</label>
@@ -68,10 +68,10 @@ include("cabecera.php");
         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
         <label for="medicoAsignado">Medico asignado</label><br>
         <select id="medicoAsignado" name="medicoAsignado" required>
-    
+  <!--muestra los medicos ingresados desde la base-->  
     <?php
    // $sql = "SELECT * FROM `medico`";
-   $conexion = mysqli_connect("localhost", "root","","datos_paciente")or exit ("no se puede conectar");
+   $conexion = mysqli_connect("localhost", "id21316587_val","Aleli1918_","id21316587_datos_paciente")or exit ("no se puede conectar");
    $sql = "SELECT * FROM medico";
    $result = $conexion->query($sql);
 
