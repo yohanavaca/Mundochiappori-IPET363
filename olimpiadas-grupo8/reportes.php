@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     
     <h1><span class="badge bg-secondary , container-fluid">Reportes</span></h1>
+    
+<!--formulario para guardar reportes-->
+    
     <form action="guardarDatos(r).php" method="post">
         
     
@@ -19,8 +22,8 @@
         <select id="medicoAsignado" name="medicoAsignado" required>
     
     <?php
-   // $sql = "SELECT * FROM `medico`";
-   $conexion = mysqli_connect("localhost", "root","","datos_paciente")or exit ("no se puede conectar");
+   //trae los medicos desde la base
+   $conexion = mysqli_connect("localhost", "id21316587_val","Aleli1918_","id21316587_datos_paciente")or exit ("no se puede conectar");
    $sql = "SELECT * FROM medico";
    $result = $conexion->query($sql);
 
