@@ -8,7 +8,7 @@
     <title>Log in</title>
     <link rel="shortcut icon" href="./img/logohmini.png">
     <link rel="shortcut icon" href="./img/logoipet-favicon.jpg">
-
+<!--conecta al boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/loginAdmin.css">
 </head>
@@ -19,13 +19,13 @@
         <h1>Inicio de sesion</h1>
 
         <img src="./img/logoh.png" alt="logoh">
-
+<!--label para ingresar el usuario / tambien verifica si la info ingresada coincide-->
         <form action="validar.php" method="POST">
         <h2>Nombre de usuario</h2>
             <label for="usuario">
                 <i class="fas fa-user"></i>
             </label>
-        
+<!--label para ingresar la contraseña / tambien verifica si la info ingresada coincide-->        
             <input type="search" name="usuario" placeholder="Usuario" id="usuario" class="form-control me-2" required>
         <h2>Contrasena</h2>
             <label for="password">
