@@ -13,7 +13,7 @@
 
     <?php
     // Conectar a la base de datos (ajusta los datos de conexión según tu configuración)
-    $conexion = mysqli_connect("localhost", "root", "", "datos_paciente") or exit("No se puede conectar a la base de datos.");
+    $conexion = mysqli_connect("localhost", "id21316587_val", "Aleli1918_", "id21316587_datos_paciente") or exit("No se puede conectar a la base de datos.");
 
     // Consultar la base de datos para obtener datos de reportes (ejemplo)
     $sql = "SELECT diagnostico, COUNT(*) AS cantidad FROM reporte GROUP BY diagnostico";
