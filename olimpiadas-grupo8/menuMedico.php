@@ -17,7 +17,7 @@
         <img src="./img/logoh.png" alt="logoh">
         <h2>Elija la operación que se desea realizar</h2>
 
-    
+<!--barra de tareas-->    
 
         <div class="botones">
             <a href="reportes.php">
