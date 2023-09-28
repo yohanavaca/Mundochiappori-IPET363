@@ -10,9 +10,13 @@
 <body>
 <?php
 include("cabecera.php");
+
 ?>
     <div class="container-fluid">
     <h1>Registro de Llamadas</h1>
+    
+<!--formulario para cargar las llamadas-->    
+    
     <form action="guardarLlamada.php" method="post">
 
         <label for="telefono">Número de Teléfono:</label>
@@ -40,8 +44,8 @@ include("cabecera.php");
         <select id="area" name="area" required>
     
     <?php
-   // $sql = "SELECT * FROM `medico`";
-   $conexion = mysqli_connect("localhost", "root","","datos_paciente")or exit ("no se puede conectar");
+   //trae las areas desde la base
+   $conexion = mysqli_connect("localhost", "id21316587_val","Aleli1918_","id21316587_datos_paciente")or exit ("no se puede conectar");
    $sql = "SELECT * FROM area";
    $result = $conexion->query($sql);
 
@@ -66,10 +70,12 @@ include("cabecera.php");
         <input type="submit" value="Guardar Llamada">
 
     </form>
+    <?php
+     include("graficoLlamadas.php");
+    ?>
 
     <?php
     include("verLlamadas.php");
-    include("graficoLlamadas.php");
     ?>
     </div>
 </body>
